@@ -48,4 +48,4 @@ jobs:
         pip install pydantic
     - name: Run Pylint
       run: |
-        python lint.py --path ./src --threshold 2
+        python *.py --extension-pkg-whitelist='pydantic' --disable=duplicate-code --threshold 2
