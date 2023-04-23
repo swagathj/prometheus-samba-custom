@@ -23,4 +23,4 @@ jobs:
         pip install pydantic
     - name: Analysing the code with pylint
       run: |
-        pylint --extension-pkg-whitelist='pydantic' --memory-swap -1 $(git ls-files '*.py')
+        pylint --extension-pkg-whitelist='pydantic' $(git ls-files '*.py')
